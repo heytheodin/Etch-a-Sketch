@@ -43,6 +43,7 @@ function resize(){
   let customGridValue =  prompt("Please enter a value between 1 and 50.");
   if (customGridValue <= 0 || customGridValue > 50) {
         alert("Please keep the value between 1 and 50.");
+        createGrid(16);
     }
   const clearGrid = document.querySelector('#cellContainer');
   clearGrid.textContent = createGrid();
